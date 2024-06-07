@@ -1,0 +1,50 @@
+numero1= int(input("Ingrese el primer numero:"))
+numero2= int(input("Ingrese el segundo numero:"))
+
+eleccion = 0
+
+while eleccion != 7:
+    print("""Elija una de las siguientes opciones
+        1) Suma
+        2) Resta
+        3) Multiplicacion
+        4) Division
+        5) Potenciacion
+        6) Cambiar numeros
+        7) Salir""")
+    
+    eleccion = int(input("Ingrese la operacion que desea realizar:"))
+
+    if eleccion == 1:
+        resultado = numero1 + numero2
+        print(" ")
+        print(f"El resultado es: {resultado}")
+        print(" ")
+    elif eleccion == 2:
+        resultado = numero1 - numero2
+        print(" ")
+        print(f"El resultado es: {resultado}")
+        print(" ")
+    elif eleccion == 3:
+        resultado = numero1 * numero2
+        print(" ")
+        print(f"El resultado es: {resultado}")
+        print(" ")
+    elif eleccion == 4:
+        resultado = numero1 / numero2
+        print(" ")
+        print(f"El resultado es: {resultado}")
+        print(" ")
+    elif eleccion == 5:
+        resultado = numero1 ** numero2
+        print(" ")
+        print(f"El resultado es: {resultado}")
+        print(" ")
+    elif eleccion == 6:
+        print(" ")
+        numero1= int(input("Ingrese el primer numero:"))
+        numero2= int(input("Ingrese el segundo numero:"))
+        print(" ")
+    else:
+        print(" ")
+        print("Gracias por usar la calculadora.")
